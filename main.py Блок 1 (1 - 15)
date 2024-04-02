@@ -1,0 +1,223 @@
+(#Блок 1 задание 1)
+
+x = float(input("Введите значение x: "))
+
+
+y = 7*x + 5
+
+
+print("Значение функции y=7x+5 при x =", x, "равно", y)
+
+(#блок 1 задание 2)
+
+side = float(input("Введите длину стороны квадрата: "))
+
+
+perimeter = 4 * side
+
+
+print("Периметр квадрата с длиной стороны", side, "равен", perimeter)
+
+(#блок 1 задание 3)
+
+radius = float(input("Введите радиус окружности: "))
+
+
+pi = 3.14159
+circumference = 2 * pi * radius
+
+
+print("Длина окружности с радиусом", radius, "равна", circumference)
+
+(#блок 1 задание 4)
+
+diameter = float(input("Введите диаметр окружности: "))
+
+
+radius = diameter / 2
+
+
+pi = 3.14159
+area = pi * radius**2
+
+
+print("Площадь окружности с диаметром", diameter, "равна", area)
+
+(# Блок 1 задание 5)
+
+import math
+
+
+a = float(input("Введите длину катета a: "))
+b = float(input("Введите длину катета b: "))
+
+
+hypotenuse = math.sqrt(a**2 + b**2)
+
+
+print("Гипотенуза прямоугольного треугольника с катетами", a, "и", b, "равна", hypotenuse)
+
+(#Блок 1 задание 6)
+
+a = float(input("Введите длину катета a: "))
+b = float(input("Введите длину катета b: "))
+c = float(input("Введите длину гипотенузы c: "))
+
+
+perimeter = a + b + c
+
+
+print("Периметр прямоугольного треугольника с катетами", a, "и", b, "и гипотенузой", c, "равен", perimeter)
+
+(#блок 1 задание 7)
+
+import math
+
+
+a = float(input("Введите длину стороны a: "))
+b = float(input("Введите длину стороны b: "))
+
+
+perimeter = 2*a + 2*b
+
+
+diagonal = math.sqrt(a**2 + b**2)
+
+
+print("Периметр прямоугольника со сторонами", a, "и", b, "равен", perimeter)
+print("Диагональ прямоугольника со сторонами", a, "и", b, "равна", diagonal)
+
+(#Блок 1 задание 8)
+
+import math
+
+
+R = float(input("Введите радиус внешней окружности (R): "))
+r = float(input("Введите радиус внутренней окружности (r): "))
+
+
+area_outer_circle = math.pi * R**2
+area_inner_circle = math.pi * r**2
+
+
+area_ring = area_outer_circle - area_inner_circle
+
+print("Площадь кольца с внешним радиусом", R, "и внутренним радиусом", r, "равна", area_ring)
+
+(#Блок 1 задание 9)
+
+
+a = float(input("Введите длину ребра куба: "))
+
+
+surface_area = 6 * a**2
+
+
+volume = a**3
+
+
+print("Площадь поверхности куба с ребром длиной", a, "равна", surface_area)
+print("Объем куба с ребром длиной", a, "равен", volume)
+
+(#Блок 1 задание 10)
+
+import math
+
+
+a = float(input("Введите длину основания a: "))
+b = float(input("Введите длину основания b: "))
+h = float(input("Введите высоту h: "))
+
+
+side = math.sqrt(h**2 + ((b - a) / 2)**2)
+
+
+perimeter = a + b + 2 * side
+
+
+print("Периметр равнобедренной трапеции с основаниями", a, "и", b, "и высотой", h, "равен", perimeter)
+
+(#Блок 1 задание 11)
+
+
+m = float(input("Введите массу тела (в кг): "))
+V = float(input("Введите объем тела (в куб. м): "))
+
+
+density = m / V
+
+
+print("Плотность тела равна", density, "кг/м^3")
+
+(#Блок 1 задание 12)
+
+
+a = float(input("Введите первое число (a): "))
+b = float(input("Введите второе число (b): "))
+
+
+sum = a + b
+diff = a - b
+product = a * b
+
+
+if b != 0:
+    quotient = a / b
+    print("Частное чисел:", quotient)
+else:
+    print("Деление на 0 недопустимо")
+
+
+print("Сумма чисел:", sum)
+print("Разность чисел:", diff)
+print("Произведение чисел:", product)
+
+(#Блок 1 задание 13)
+
+import math
+
+
+a = float(input("Введите первое положительное число (a): "))
+b = float(input("Введите второе положительное число (b): "))
+
+
+if a > 0 and b > 0:
+   
+    avg_arithmetic = (a + b) / 2
+    
+   
+    avg_geometric = math.sqrt(a * b)
+     
+     
+    print("Среднее арифметическое чисел a и b:", avg_arithmetic)
+    print("Среднее геометрическое чисел a и b:", avg_geometric)
+else:
+    print("Введенные числа должны быть положительными")
+    
+ (#Блок 1 задание 14)
+ 
+ 
+area = float(input("Введите площадь государства (в км^2): "))
+population = int(input("Введите количество жителей: "))
+
+
+density = population / area
+
+
+print("Плотность населения составляет", density, "чел/км^2")
+
+(#Блок 1 задание 15)
+
+a = float(input("Введите длину прямоугольного параллелепипеда: "))
+b = float(input("Введите ширину прямоугольного параллелепипеда: "))
+c = float(input("Введите высоту прямоугольного параллелепипеда: "))
+
+
+surface_area = 2*(a*b + b*c + a*c)
+
+
+volume = a * b * c
+
+
+print("Площадь поверхности прямоугольного параллелепипеда:", surface_area)
+print("Объем прямоугольного параллелепипеда:", volume)
